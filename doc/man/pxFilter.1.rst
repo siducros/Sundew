@@ -137,7 +137,7 @@ PRODUCT ROUTING OPTIONS
   **routingTable filename (default: pxRouting.conf)**
   **feed receivername**
 
-After determining the ingest_name, the ingest_name is matched against the **accept\fR and \fBreject**
+After determining the ingest_name, the ingest_name is matched against the **accept** and **reject**
 regexp patterns of the filter's configuration file. The default is for the file to be accepted.  
 **reject** (exclusion) can be used to suppress reception of files with a certain pattern. 
 Files suppressed are not ingested into the DB.
@@ -186,12 +186,12 @@ other keyword could be None, StandardSorter.  Determine which type of sorter wil
 **patternMatching boolean  (Default: True)**
 
 If the option **patternMatching** is True by default. But if it is set to False, the products' file name
-will not be matched against the **accept\fR and \fBreject** regexp patterns of the sender's configuration file.
+will not be matched against the **accept** and **reject** regexp patterns of the sender's configuration file.
 For sender of type single-file, no product is processed. For senders of type am or wmo, all products are processed.
 
 **emask/imask <filepattern>**
 
-**emask/imask\fR are an older version of \fBaccept/reject** and use filepattern instead of regexp pattern.
+**emask/imask** are an older version of **accept/reject** and use filepattern instead of regexp pattern.
 They are still working for now  but consider them obsolete.
 
 **clientsPatternMatching boolean  (Default: True)**
